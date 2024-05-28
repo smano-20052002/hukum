@@ -42,7 +42,7 @@ return (
         <div className="pdf-container" style={{ width: 150 ,height:"83vh"}}>
           
           {error && <div className="error">{error}</div>}
-          <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.min.js">
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
             {viewpdf ? (
 
               <Viewer fileUrl={viewpdf} plugins={[newPlugin]} />
