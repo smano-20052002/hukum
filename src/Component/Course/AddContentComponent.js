@@ -173,14 +173,14 @@ function AddContentComponent() {
     dispatch(fetchContentUrlRequest(EditContent.filePath))
     console.log("blob", EditContentUrl);
     console.log("dis",dispatch(fetchContentUrlRequest(EditContent.filePath)));
-    setMaterial({
-    
+    setMaterial({  
       materialId: EditContent.materialId,
       name: EditContent.name,
       material: EditContentUrl,
       modifiedBy: sessionStorage.getItem("userName"),
-  
     })
+    console.log("ublob", EditContentUrl);
+ console.log("matuiqwerty",material);
   }
     
   const handleMaterial = (event) => {

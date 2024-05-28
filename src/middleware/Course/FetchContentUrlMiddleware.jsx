@@ -15,7 +15,7 @@ const fetchContentUrlApi = ({ dispatch }) => (next) => async (action) => {
         console.log("restype",response.data.type)
         const blob = new Blob([response.data], { type: response.data.type });
         console.log("resblob",blob);
-        var file = new File([blob], "material", { type: blob.type, lastModified: Date.now() })
+        var file = new File([blob], "material.pdf", { type: blob.type, lastModified: Date.now() })
         // Dispatch the action with the Blob
         console.log("file",file);
         dispatch(fetchContentUrlSuccess(file));

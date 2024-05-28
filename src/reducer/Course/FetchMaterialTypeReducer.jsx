@@ -23,7 +23,7 @@ import {
         };
   
       case FETCH_MATERIALTYPE_SUCCESS:
-        console.log("materialtypereducer",action.payload);
+        // console.log("materialtypereducer",action.payload);
         return{
           ...state,
           materialtype:action.payload,
